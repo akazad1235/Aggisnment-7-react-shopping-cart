@@ -5,11 +5,12 @@
     width: 305px;
     height: 450px;
     display: block;
-    border: 1px solid black;
     margin: 5px;
     padding: 5px;
     float: left;
     margin-left: 20px;
+    box-shadow: 10px 10px 8px 5px #888888;
+    border-radius: 5px;
 }
 .pro img{
     width: 270px;

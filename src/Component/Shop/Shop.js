@@ -6,7 +6,7 @@ import Cart from '../Cart/Cart';
 
 const  Shop = () => {
 
-    const limits = courseInfo.slice(0, 10)
+    const limits = courseInfo.slice(0, 20)
 
     const [product, setProduct] = useState(limits);
     const [cart, setCart] = useState([])
