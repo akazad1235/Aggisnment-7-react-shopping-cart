@@ -1,0 +1,15 @@
+.cart-info{
+    display: flex;
+    border:1px solid gold;
+    margin: 5px;
+    border-radius: 3px;
+}
+.cart-left{
+    padding: 2px;
+    width: 60%;
+}
+.cart-right img{
+    width: 100px;
+    margin-top: 10px;
+    padding: 3px;
+}

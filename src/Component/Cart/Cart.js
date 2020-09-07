@@ -2,6 +2,8 @@ import React from 'react';
 import './Cart.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import Cartinfo from '../CartInfo/Cartinfo';
+
 
 const Cart = (props) => {
     //console.log(props);
@@ -14,10 +16,19 @@ const Cart = (props) => {
         
     // }
     // console.log(totalPrice);
+   
     return (
         <div className="cart">
             <h3>Total Item: <FontAwesomeIcon icon={faShoppingCart}/> <span className='text-success'>{cart.length}</span></h3>
              <p><storng>Total Price:</storng>${totalPrice}</p>
+            <div>
+                {
+                    cart.map(sort => <Cartinfo name={sort.name} price={sort.price} img={sort.img}></Cartinfo>)
+                }
+               
+            </div>
+
+
              <button className="btn btn-success checkout-btn ">Checkout</button>
         </div>
     );
